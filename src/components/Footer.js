@@ -3,9 +3,11 @@ import { FaYoutube, FaTwitter, FaInstagram, } from 'react-icons/fa'; // Import i
 import { FaGithub, FaTelegram } from 'react-icons/fa6';
 // import '../Footer.css';
 
+
 const Footer = () => {
     return (
         <footer className="footer">
+
             <p className='copyright'>Recipe App &copy; 2024</p>
             <div className="social-icons">
                 <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
@@ -23,6 +25,7 @@ const Footer = () => {
                 <a href="https://www.Telegram.com" target="_blank" rel="noopener noreferrer">
                     <FaTelegram size={30} />
                 </a>
+
             </div>
         </footer>
     );

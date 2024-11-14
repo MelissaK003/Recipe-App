@@ -1,8 +1,22 @@
-import React from "react";
+import React,{useState} from "react";
+import EditRecipe from "./EditRecipe";
 
-function RecipeDetails ({recipe, onClose, onDelete}){
+function RecipeDetails ({recipe, onClose, onDelete, setRecipes}){
+    const [isEditing, setIsEditing] = useState(false);
+
+    const handleUpdateRecipe = (updatedRecipe) => {
+        setRecipes(prevRecipes =>
+            prevRecipes.map(r => (r.id === updatedRecipe.id ? updatedRecipe : r))
+        );
+        setIsEditing(false); // Ensure this is called after updating
+    };
+
     return(
         <div className="recipedetail">
+            {isEditing ? (
+                <EditRecipe recipe={recipe} onUpdateRecipe={handleUpdateRecipe} onClose={() => setIsEditing(false)} />
+            ) : (
+             <>
             {/* <img src={recipe.image}/> */}
             <h2>{recipe.recipeName}</h2>
             <p><strong>Prep Time:</strong> {recipe.prepTime}</p>
@@ -20,9 +34,11 @@ function RecipeDetails ({recipe, onClose, onDelete}){
                 ))}
             </ol>
             <button className="back-btn" onClick={onClose}>Back</button>
-            <button className="Edit-btn">Edit Recipe</button>
+            <button className="Edit-btn" onClick={() => setIsEditing(true)}>Edit Recipe</button>
             <button className="Del-btn" onClick={() => onDelete(recipe.id)}>Delete Recipe</button>
-        </div>
+             </>
+            )}
+         </div>
     )
 }
 export default RecipeDetails;
