@@ -14,6 +14,99 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Card styling */
+.card {
+  margin: 1rem;
+  height: 670px;
+  width: 700px;
+  border: 1px solid #ddd; 
+  border-radius: 8px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  margin: 20px; 
+  transition: transform 0.2s; 
+
+}
+
+.card img {
+  width: 100%;
+  height: 550px; 
+  object-fit: cover
+}
+
+.card button {
+  margin-top: 0.5rem;
+  border: none; 
+  padding: 10px 20px; 
+  border-radius: 5px; 
+  cursor: pointer;  
+}
+.card button:hover {
+  background-color: darkgoldenrod;
+} 
+.recipe-list{
+  display: flex; 
+  flex-direction: row;
+  flex-wrap: wrap; 
+  justify-content: flex-start; 
+  margin: 28px; /* Adjust negative margin for spacing */
+}
+.list h2{
+  background-color: rgb(236, 174, 18);
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* Details style */
+.recipedetail button{
+  margin-right: 8px; 
+  padding: 5px 10px; 
+  border-radius: 5px; 
+  cursor: pointer;
+}
+
+/* Form style */
+.new-recipe {
+  max-width: 1000px; 
+  
+  margin: 50px auto; 
+  padding: 40px;
+  border: 1px solid #ddd; 
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  background-color: rgb(236, 174, 18);
+}
+
+.new-recipe h2 {
+  text-align: center; 
+  color: #333; 
+}
+
+form {
+  display: flex; 
+  flex-direction: column; 
+}
+
+input[type="text"],input[type="number"] {
+  padding: 20px; /* Padding inside input fields */
+  margin-bottom: 30px; /* Space between input fields */
+  border: 1px solid #ccc; /* Light gray border for inputs */
+  border-radius: 4px; /* Rounded corners for inputs */
+  font-size: 20px; /* Increase font size for better readability */
+}
+.new-recipe button{
+  margin-top: 0.5rem;
+  border: none; 
+  padding: 15px 20px; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  background-color: rgb(46, 43, 43); 
+  color: #ddd;
+  font-size: 20px
+}
+.new-recipe button:hover{
+  background-color: rgb(107, 105, 100);
+}
 .Footer {
   background-color: #333; 
   color: white; 
@@ -44,5 +137,6 @@ code {
 .social-icons a:hover {
   color: #070707; 
 }
+
 
 
