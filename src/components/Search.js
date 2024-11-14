@@ -3,8 +3,10 @@ import { useState } from "react"
 function Search({recipeName,setRecipe}) 
 {
 const[Search,setSearch]= useState([])
+
  const handleSearch = (e) => {
     const query = e.target.value.toLowerCase();
+
     setSearch(query);
     setRecipe(recipeName.filter(recipe => recipe.name.toLowerCase().includes(query)));
   };
@@ -28,3 +30,4 @@ const[Search,setSearch]= useState([])
     
 }
 export default Search;
+

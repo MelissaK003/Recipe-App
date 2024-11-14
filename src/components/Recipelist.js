@@ -35,7 +35,7 @@ const deleteRecipe = (id) => {
 
 if (selectedRecipe) {
   return (
-      <RecipeDetails recipe={selectedRecipe} onClose={() => setSelectedRecipe(null)} onDelete={deleteRecipe} />
+      <RecipeDetails recipe={selectedRecipe} onClose={() => setSelectedRecipe(null)} onDelete={deleteRecipe} setRecipes={setRecipe}/>
   );
 }
 
