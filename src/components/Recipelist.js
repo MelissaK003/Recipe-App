@@ -53,7 +53,7 @@ const addRecipe = (recipeToAdd) => {
             ))}
             </div>
             <div>
-            <Form onAddRecipe ={addRecipe} />
+            {/* <Form onAddRecipe ={addRecipe} /> */}
     </div>
     </div>
  )

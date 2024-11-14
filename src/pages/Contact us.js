@@ -8,15 +8,10 @@ import Footer from "../components/Footer";
 
 import Navbar from "../components/Navbar";
 
-export default function ContactUs(){
-    return(
-        <div>
-            <Navbar/>
-            
-        </div>
-
-const ContactUs = () => {
-    return (<div>
+ function ContactUs(){
+    return (
+        <><Navbar/>
+        <Footer/>
         <div style={{ maxWidth: '400px', margin: '0 auto', padding: '40px', border: '1px solid #ccc', borderRadius: '5px' }}>
             <h2>Contact Us</h2>
             <p><FontAwesomeIcon icon={faPhone} /> <strong>Call:</strong> +254700403124</p>
@@ -26,12 +21,11 @@ const ContactUs = () => {
             <p><FontAwesomeIcon icon={faMapMarkerAlt} /> <strong>P.O. Box:</strong> 34653-01100</p>
             <p><FontAwesomeIcon icon={faEnvelope} /> <strong>Email:</strong> Recipeapp@gmail.com</p>
             
-        </div>
-        <div>
-            <Footer/>
-            </div>
-        </div>
+        </div></>
+        
+        
+        
     );
-};
+}
+export default ContactUs
 
-export default ContactUs;
