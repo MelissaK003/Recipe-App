@@ -47,7 +47,6 @@ if (selectedRecipe) {
             <RecipeCard key={recipe.id} recipe={recipe} onViewDetails={handleViewDetails}  />
             ))}
             </div>
-
     </div>
  )
 }

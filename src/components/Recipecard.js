@@ -17,4 +17,3 @@ function RecipeCard ({recipe,onViewDetails}){
   export default RecipeCard;
 
 
-

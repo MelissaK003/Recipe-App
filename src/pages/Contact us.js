@@ -11,18 +11,17 @@ const ContactUs = () => {
         <div>
             <Navbar />
             <div style={{ maxWidth: '400px', margin: '0 auto', padding: '40px', border: '1px solid #ccc', borderRadius: '5px' }}>
-                <h2>Contact Us</h2>
-                <p><FontAwesomeIcon icon={faPhone} /> <strong>Call:</strong> +254700403124</p>
-                <p><FontAwesomeIcon icon={faInstagram} /> <strong>Instagram:</strong> @Recipeapp</p>
-                <p><FontAwesomeIcon icon={faGithub} /> <strong>GitHub:</strong> Recipe-app1</p>
-                <p><FontAwesomeIcon icon={faMapMarkerAlt} /> <strong>X:</strong> @letsmakesomefood</p>
-                <p><FontAwesomeIcon icon={faMapMarkerAlt} /> <strong>P.O. Box:</strong> 34653-01100</p>
-                <p><FontAwesomeIcon icon={faEnvelope} /> <strong>Email:</strong> Recipeapp@gmail.com</p>
-            </div>
+    <h1 style={{ textDecoration:'underline' }}>Contact Us</h1>
+    <p><FontAwesomeIcon icon={faPhone} /> <strong>Call:</strong> +254700403124</p>
+    <p><FontAwesomeIcon icon={faInstagram} /> <strong>Instagram:</strong> @Recipeapp</p>
+    <p><FontAwesomeIcon icon={faGithub} /> <strong>GitHub:</strong> Recipe-app1</p>
+    <p><FontAwesomeIcon icon={faMapMarkerAlt} /> <strong>X:</strong> @letsmakesomefood</p>
+    <p><FontAwesomeIcon icon={faMapMarkerAlt} /> <strong>P.O. Box:</strong> 34653-01100</p>
+    <p><FontAwesomeIcon icon={faEnvelope} /> <strong>Email:</strong> Recipeapp@gmail.com</p>
+</div>
             <Footer />
         </div>
-
     );
-}
-export default ContactUs
+};
 
+export default ContactUs;
