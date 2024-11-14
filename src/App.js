@@ -1,12 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+// import Recipelist from './components/Recipelist';
 import Home from './pages/Home';
 import ContactUs from './pages/Contact us';
 import Form  from './pages/Form';
-import { BrowserRouter as Router,Routes,Route, Form } from 'react-router-dom';
+import Landing from './components/Landing'
+import { BrowserRouter as Router,Routes,Route} from 'react-router-dom';
 
 function App() {
   return (
+    // <div> 
+    //   < Recipelist />
+    // </div>
     
     <Router>
       <Routes>
