@@ -126,22 +126,25 @@ input[type="text"],input[type="number"] {
 }
 
 .footer p {
-  margin: 0; 
+  font-size: xx-large;
+  margin: 60px; 
 }
 
 .social-icons {
-  margin-top: 10px; 
+  margin-bottom: 10px; 
 }
 
 .social-icons a {
   color: rgb(212, 63, 63); 
   margin: 0 10px; 
+  padding: 190px;
   text-decoration: none; 
 }
 
 .social-icons a:hover {
   color: #070707; 
 }
+
 
 
 

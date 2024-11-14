@@ -11,7 +11,7 @@ const ContactUs = () => {
     return (
         <div>
             <Navbar />
-            <div style={{ maxWidth: '400px', margin: '0 auto', padding: '40px', border: '1px solid #ccc', borderRadius: '5px' }}>
+            <div style={{ margin: '20px auto', padding: '40px', border: '6px solid #;', borderRadius: '5px', fontSize: '57px', background:'rgb(236, 174, 18)'}}>
                 <h2>Contact Us</h2>
                 <p><FontAwesomeIcon icon={faPhone} /> <strong>Call:</strong> +254700403124</p>
                 <p><FontAwesomeIcon icon={faInstagram} /> <strong>Instagram:</strong> @Recipeapp</p>
@@ -19,6 +19,7 @@ const ContactUs = () => {
                 <p><FontAwesomeIcon icon={faMapMarkerAlt} /> <strong>X:</strong> @letsmakesomefood</p>
                 <p><FontAwesomeIcon icon={faMapMarkerAlt} /> <strong>P.O. Box:</strong> 34653-01100</p>
                 <p><FontAwesomeIcon icon={faEnvelope} /> <strong>Email:</strong> Recipeapp@gmail.com</p>
+                
             </div>
             <Footer />
         </div>

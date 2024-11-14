@@ -1,54 +1,81 @@
-import React,{ useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import RecipeCard from "./Recipecard";
 import RecipeDetails from "./RecipeDetails";
 
-function Recipelist (){
+function Recipelist() {
+  const [recipes, setRecipe] = useState([]);
+  const [selectedRecipe, setSelectedRecipe] = useState(null);
+  const [searchQuery, setSearchQuery] = useState(""); // State to store the search query
 
-const[recipes,setRecipe] = useState([])
-const [selectedRecipe, setSelectedRecipe] = useState(null);
-
-    useEffect(() => {
+  useEffect(() => {
     fetch("http://localhost:3000/recipes")
-    .then(response => response.json())
-    .then(recipe => setRecipe(recipe))
-    .catch(error => console.error('Error fetching data:' ,error))
-  },[]
-)
-if (recipes.length === 0) {
-  return <p>Loading recipes...</p>
-}
-//Function to handle the view more details button 
-const handleViewDetails = (recipe) => {
-  setSelectedRecipe(recipe);
-}; 
-//Function to delete recipe 
-const deleteRecipe = (id) => {
-  fetch(`http://localhost:3000/recipes/${id}`, {
-    method: "DELETE",
-  })
-  .then(() => {
-    setRecipe((prevRecipes) => prevRecipes.filter(recipe => recipe.id !== id));
-    alert("Recipe deleted successfully!"); 
-    })
-  .catch(error => console.error('Error deleting recipe:', error));
-};  
+      .then((response) => response.json())
+      .then((recipe) => setRecipe(recipe))
+      .catch((error) => console.error("Error fetching data:", error));
+  }, []);
 
-if (selectedRecipe) {
+  // Filter recipes based on the search query
+  const filteredRecipes = recipes.filter((recipe) =>
+    recipe.recipeName.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
+  if (recipes.length === 0) {
+    return <p>Loading recipes...</p>;
+  }
+
+  // Function to handle the view more details button
+  const handleViewDetails = (recipe) => {
+    setSelectedRecipe(recipe);
+  };
+
+  // Function to delete recipe
+  const deleteRecipe = (id) => {
+    fetch(`http://localhost:3000/recipes/${id}`, {
+      method: "DELETE",
+    })
+      .then(() => {
+        setRecipe((prevRecipes) => prevRecipes.filter((recipe) => recipe.id !== id));
+        alert("Recipe deleted successfully!");
+      })
+      .catch((error) => console.error("Error deleting recipe:", error));
+  };
+
+  if (selectedRecipe) {
+    return (
+      <RecipeDetails
+        recipe={selectedRecipe}
+        onClose={() => setSelectedRecipe(null)}
+        onDelete={deleteRecipe}
+      />
+    );
+  }
+
   return (
-      <RecipeDetails recipe={selectedRecipe} onClose={() => setSelectedRecipe(null)} onDelete={deleteRecipe} />
+    <div className="list">
+     
+      {/* Search input field */}
+      <div className="search-bar">
+        <input
+          type="text"
+          placeholder="Search by recipe name"
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)} // Update search query state
+        />
+      </div>
+   <h2>Available Recipes</h2>
+      <div className="recipe-list">
+        {filteredRecipes.length > 0 ? (
+          filteredRecipes.map((recipe) => (
+            <RecipeCard key={recipe.id} recipe={recipe} onViewDetails={handleViewDetails} />
+          ))
+        ) : (
+          <p>No recipes found matching your search.</p>
+        )}
+      </div>
+    
+
+    </div>
   );
 }
 
- return(
-    <div className="list">
-      <h2>Available Recipes</h2>
-      <div className="recipe-list">
-        {recipes.map((recipe) => (
-            <RecipeCard key={recipe.id} recipe={recipe} onViewDetails={handleViewDetails}  />
-            ))}
-            </div>
-
-    </div>
- )
-}
 export default Recipelist;
