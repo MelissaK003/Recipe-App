@@ -1,4 +1,6 @@
+
 import React,{useState} from "react";
+import Navbar from "../components/Navbar";
 
 function AddRecipe ({onAddRecipe}){
 
@@ -40,6 +42,9 @@ function AddRecipe ({onAddRecipe}){
         } )}
 
     return (
+      <>
+        <Navbar/>
+        </>
         <div className="new-recipe">
             <h2>Fill in the form to add a Recipe</h2>
       <form onSubmit={handleSubmit}>
@@ -57,3 +62,4 @@ function AddRecipe ({onAddRecipe}){
     )
 }
 export default AddRecipe;
+
