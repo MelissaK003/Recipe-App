@@ -133,6 +133,69 @@
         "Serve the chicken noodle soup hot, garnished with fresh parsley."
       ],
       "servings": 6
+    },
+    {
+      "id": "ea46",
+      "recipeName": "Pilau",
+      "image": "https://cheflolaskitchen.com/wp-content/uploads/2019/12/DSC0362-East-african-pilau-pelau.jpg.webp",
+      "prepTime": "12 minutes",
+      "cookTime": "22 minutes",
+      "ingredients": [
+        "1 teaspoon cloves",
+        "2 tablespoon cumin seeds",
+        "1/2 tablespoon black peppercorn seeds",
+        "12 pods Cardamon",
+        "1 stick cinnamon"
+      ],
+      "instructions": [
+        "Place the cumin, black peppers, cinnamon, cardamom and cloves in a dry pan",
+        "Roast over low heat until warmed through and fragrant and blend (I used a coffee grinder) until smooth",
+        "You need just 1 to 11/2 tablespoons for this recipe (depending on how fragrant you want the rice to be)",
+        "Feel free to store the leftover spice powder in an airtight container for up to 3 months, or refrigerate for up to 6 months"
+      ],
+      "servings": "8"
+    },
+    {
+      "id": "3859",
+      "recipeName": "Pilau",
+      "image": "https://cheflolaskitchen.com/wp-content/uploads/2019/12/DSC0362-East-african-pilau-pelau.jpg.webp",
+      "prepTime": "10 minutes",
+      "cookTime": "20 minutes",
+      "ingredients": [
+        "1 teaspoon cloves",
+        "2 tablespoon cumin seeds",
+        "1/2 tablespoon black peppercorn seeds",
+        "12 pods Cardamon",
+        "1 stick cinnamon"
+      ],
+      "instructions": [
+        "Place the cumin, black peppers, cinnamon, cardamom and cloves in a dry pan",
+        "Roast over low heat until warmed through and fragrant and blend (I used a coffee grinder) until smooth",
+        "You need just 1 to 11/2 tablespoons for this recipe (depending on how fragrant you want the rice to be)",
+        "Feel free to store the leftover spice powder in an airtight container for up to 3 months, or refrigerate for up to 6 months"
+      ],
+      "servings": "8"
+    },
+    {
+      "id": "260e",
+      "recipeName": "Pilau",
+      "image": "https://cheflolaskitchen.com/wp-content/uploads/2019/12/DSC0362-East-african-pilau-pelau.jpg.webp",
+      "prepTime": "10 minutes",
+      "cookTime": "20 minutes",
+      "ingredients": [
+        "1 teaspoon cloves",
+        "2 tablespoon cumin seeds",
+        "1/2 tablespoon black peppercorn seeds",
+        "12 pods Cardamon",
+        "1 stick cinnamon"
+      ],
+      "instructions": [
+        "Place the cumin, black peppers, cinnamon, cardamom and cloves in a dry pan",
+        "Roast over low heat until warmed through and fragrant and blend (I used a coffee grinder) until smooth",
+        "You need just 1 to 11/2 tablespoons for this recipe (depending on how fragrant you want the rice to be)",
+        "Feel free to store the leftover spice powder in an airtight container for up to 3 months, or refrigerate for up to 6 months"
+      ],
+      "servings": "9"
     }
   ]
 }

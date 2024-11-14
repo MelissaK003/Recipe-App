@@ -1,7 +1,6 @@
 import React,{ useEffect, useState } from "react";
 import RecipeCard from "./Recipecard";
 import RecipeDetails from "./RecipeDetails";
-import Form  from "../pages/Form";
 
 function Recipelist (){
 
@@ -39,10 +38,6 @@ if (selectedRecipe) {
       <RecipeDetails recipe={selectedRecipe} onClose={() => setSelectedRecipe(null)} onDelete={deleteRecipe} />
   );
 }
-//Function to add recipe on form 
-const addRecipe = (recipeToAdd) => {
-  setRecipe(prevRecipes => [...prevRecipes, recipeToAdd]);}
-  
 
  return(
     <div className="list">
@@ -52,9 +47,7 @@ const addRecipe = (recipeToAdd) => {
             <RecipeCard key={recipe.id} recipe={recipe} onViewDetails={handleViewDetails}  />
             ))}
             </div>
-            <div>
-            <Form onAddRecipe ={addRecipe} />
-    </div>
+
     </div>
  )
 }

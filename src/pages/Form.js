@@ -1,5 +1,5 @@
-
-import React,{useState} from "react";
+import React from "react";
+import RecipeForm from "../components/RecipeForm"
 import Navbar from "../components/Navbar";
 
 function AddRecipe ({onAddRecipe}){
@@ -42,8 +42,7 @@ function AddRecipe ({onAddRecipe}){
         } )}
 
     return (
-     <div> <>
-
+      <>
         <Navbar/>
         </>
         <div className="new-recipe">
@@ -58,10 +57,9 @@ function AddRecipe ({onAddRecipe}){
         <input type="number" name="servings" placeholder="Servings" value={servings} onChange={(e) => setServings(e.target.value)} />
         <button type="submit">Add Recipe</button>
       </form>
-    </div></div> 
-     
+    </div>
 
     )
+    
 }
-export default AddRecipe;
-
+export default Form;
