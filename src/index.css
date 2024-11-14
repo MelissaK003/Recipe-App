@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 40px;
+  background-color:black
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -13,7 +14,6 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
 .Footer {
   background-color: #333; 
   color: white; 
@@ -44,4 +44,5 @@ code {
 .social-icons a:hover {
   color: #070707; 
 }
+
 
