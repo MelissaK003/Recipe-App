@@ -6,7 +6,6 @@ import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
-
 const ContactUs = () => {
     return (
         <div>

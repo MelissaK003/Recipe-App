@@ -1,9 +1,5 @@
 import Navbar from "./Navbar";
-import Search from "./Search";
-
-
-import Recipelist from "./Recipelist.js"
-
+ import Search from "./Search";
 export default function Landing() {
 return(
         <div>
