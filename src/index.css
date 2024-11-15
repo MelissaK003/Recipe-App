@@ -1,10 +1,8 @@
 body {
   margin: 0;
   padding: 40px;
-
-  background-color:black;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-
+  background-color:black
+  font-family -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -27,6 +25,7 @@ code {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
   margin: 20px; 
   transition: transform 0.2s; 
+  
 
 }
 
@@ -69,6 +68,10 @@ code {
   border-radius: 5px; 
   cursor: pointer;
 }
+.recipedetail button :hover{
+  background-color: darkgoldenrod;
+}
+
 
 /* Form style */
 .new-recipe {
@@ -93,11 +96,11 @@ form {
 }
 
 input[type="text"],input[type="number"] {
-  padding: 20px; /* Padding inside input fields */
-  margin-bottom: 30px; /* Space between input fields */
-  border: 1px solid #ccc; /* Light gray border for inputs */
-  border-radius: 4px; /* Rounded corners for inputs */
-  font-size: 20px; /* Increase font size for better readability */
+  padding: 20px; 
+  margin-bottom: 30px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  font-size: 20px; 
 }
 .new-recipe button{
   margin-top: 0.5rem;
@@ -112,19 +115,25 @@ input[type="text"],input[type="number"] {
 .new-recipe button:hover{
   background-color: rgb(107, 105, 100);
 }
-.Footer {
-  background-color: #333; 
-  color: white; 
+/* Footer */
+.footer {
+  background-color: rgb(236, 174, 18); 
+  color: black;
   text-align: center; 
-  padding: 10px 0; 
-  position: relative; 
-  display:flex;
-  justify-content: center;
-  bottom: 0; 
+  padding: 20px 0; 
   width: 100%; 
   min-height:fit-content;
-}
+  margin-top: 50px;
 
+}
+.footer-content {
+  max-width: 1200px; 
+  margin: 0 auto; 
+}
+.footer-divider {
+  background-color: rgba(0, 0, 0, 0.5); 
+  margin: 10px 0; 
+}
 .footer p {
   font-size: xx-large;
   margin: 60px; 
@@ -135,14 +144,16 @@ input[type="text"],input[type="number"] {
 }
 
 .social-icons a {
+
   color: rgb(212, 63, 63); 
   margin: 0 10px; 
   padding: 190px;
   text-decoration: none; 
+
 }
 
 .social-icons a:hover {
-  color: #070707; 
+  color: #ce1818; 
 }
 
 

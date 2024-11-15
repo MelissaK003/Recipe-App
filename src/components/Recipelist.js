@@ -14,9 +14,11 @@ function Recipelist() {
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
 
+
   // Filter recipes based on the search query
   const filteredRecipes = recipes.filter((recipe) =>
     recipe.recipeName.toLowerCase().includes(searchQuery.toLowerCase())
+
   );
 
   if (recipes.length === 0) {
@@ -64,6 +66,7 @@ function Recipelist() {
       </div>
    <h2>Available Recipes</h2>
       <div className="recipe-list">
+
         {filteredRecipes.length > 0 ? (
           filteredRecipes.map((recipe) => (
             <RecipeCard key={recipe.id} recipe={recipe} onViewDetails={handleViewDetails} />
@@ -74,8 +77,10 @@ function Recipelist() {
       </div>
     
 
+
     </div>
   );
 }
+
 
 export default Recipelist;
