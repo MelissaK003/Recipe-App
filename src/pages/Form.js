@@ -8,7 +8,6 @@ function Form(){
         <div>
             <Navbar/>
             <RecipeForm/>
-            <Footer/>
         </div>
     )
     
