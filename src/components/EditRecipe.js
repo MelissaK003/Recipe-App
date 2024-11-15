@@ -21,7 +21,7 @@ const EditRecipe = ({ recipe, onUpdateRecipe, onClose }) => {
             instructions: instructions.split(".").map(instruction => instruction.trim()),
         };
 
-        fetch(`http://localhost:3000/recipes/${recipe.id}`, {
+        fetch(`https://recipe-app-1-afuv.onrender.com/recipes/${recipe.id}`, {
             method: "PATCH",
             headers: {
                 "Content-Type": "application/json",
