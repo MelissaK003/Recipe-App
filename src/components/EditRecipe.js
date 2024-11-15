@@ -3,8 +3,8 @@ import React, { useState } from "react";
 const EditRecipe = ({ recipe, onUpdateRecipe, onClose }) => {
     const [recipeName, setRecipeName] = useState(recipe.recipeName);
     const [image, setImage] = useState(recipe.image);
-    const [prepTime, setPrepTime] = useState(recipe.prepTime.replace(" minutes", "")); // Remove " minutes" for input
-    const [cookTime, setCookTime] = useState(recipe.cookTime.replace(" minutes", "")); // Remove " minutes" for input
+    const [prepTime, setPrepTime] = useState(recipe.prepTime.replace(" minutes", "")); 
+    const [cookTime, setCookTime] = useState(recipe.cookTime.replace(" minutes", "")); 
     const [ingredients, setIngredients] = useState(recipe.ingredients.join(", "));
     const [instructions, setInstructions] = useState(recipe.instructions.join(". "));
 
@@ -15,8 +15,8 @@ const EditRecipe = ({ recipe, onUpdateRecipe, onClose }) => {
             ...recipe,
             recipeName,
             image,
-            prepTime: `${prepTime} minutes`, // Append "minutes" back
-            cookTime: `${cookTime} minutes`, // Append "minutes" back
+            prepTime: `${prepTime} minutes`, 
+            cookTime: `${cookTime} minutes`,
             ingredients: ingredients.split(",").map(ingredient => ingredient.trim()),
             instructions: instructions.split(".").map(instruction => instruction.trim()),
         };
@@ -30,8 +30,8 @@ const EditRecipe = ({ recipe, onUpdateRecipe, onClose }) => {
         })
         .then(response => response.json())
         .then(updated => {
-            onUpdateRecipe(updated); // Update the recipe in parent component
-            onClose(); // Close the edit form
+            onUpdateRecipe(updated);alert('Recipe updated successfully!');
+            onClose(); 
         })
         .catch(error => console.error('Error updating recipe:', error));
     };

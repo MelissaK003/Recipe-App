@@ -5,13 +5,17 @@
       "recipeName": "Spaghetti Bolognese",
       "image": "https://plus.unsplash.com/premium_photo-1677000666741-17c3c57139a2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8U3BhZ2hldHRpJTIwQm9sb2duZXNlfGVufDB8fDB8fHww",
       "prepTime": "15 minutes",
-      "cookTime": "1 hour",
+      "cookTime": "60 minutes",
       "ingredients": [
         "1 lb ground beef",
-        "1 onion, chopped",
-        "2 cloves garlic, minced",
-        "1 carrot, grated",
-        "1 stalk celery, chopped",
+        "1 onion",
+        "chopped",
+        "2 cloves garlic",
+        "minced",
+        "1 carrot",
+        "grated",
+        "1 stalk celery",
+        "chopped",
         "1 can (14 oz) crushed tomatoes",
         "1 can (6 oz) tomato paste",
         "1 teaspoon dried oregano",
@@ -21,11 +25,20 @@
         "12 oz spaghetti"
       ],
       "instructions": [
-        "In a large pot, cook ground beef over medium heat until browned. Drain excess fat.",
-        "Add onion, garlic, carrot, and celery. Cook until vegetables are tender.",
-        "Stir in crushed tomatoes, tomato paste, oregano, basil, salt, and pepper. Simmer for 30 minutes.",
-        "Meanwhile, cook spaghetti according to package instructions. Drain.",
-        "Serve Bolognese sauce over cooked spaghetti and sprinkle with Parmesan cheese."
+        "In a large pot, cook ground beef over medium heat until browned",
+        "Drain excess fat",
+        "",
+        "Add onion, garlic, carrot, and celery",
+        "Cook until vegetables are tender",
+        "",
+        "Stir in crushed tomatoes, tomato paste, oregano, basil, salt, and pepper",
+        "Simmer for 30 minutes",
+        "",
+        "Meanwhile, cook spaghetti according to package instructions",
+        "Drain",
+        "",
+        "Serve Bolognese sauce over cooked spaghetti and sprinkle with Parmesan cheese",
+        ""
       ],
       "servings": 6
     },
@@ -133,6 +146,28 @@
         "Serve the chicken noodle soup hot, garnished with fresh parsley."
       ],
       "servings": 6
+    },
+    {
+      "id": "d260",
+      "recipeName": "Pilau",
+      "image": "https://cheflolaskitchen.com/wp-content/uploads/2019/12/DSC0362-East-african-pilau-pelau.jpg.webp",
+      "prepTime": "10 minutes",
+      "cookTime": "2000 minutes",
+      "ingredients": [
+        "1 teaspoon cloves",
+        "2 tablespoon cumin seeds",
+        "1/2 tablespoon black peppercorn seeds",
+        "12 pods Cardamon",
+        "1 stick cinnamon",
+        "8 Eggs"
+      ],
+      "instructions": [
+        "Place the cumin, black peppers, cinnamon, cardamom and cloves in a dry pan",
+        "Roast over low heat until warmed through and fragrant and blend (I used a coffee grinder) until smooth",
+        "You need just 1 to 11/2 tablespoons for this recipe (depending on how fragrant you want the rice to be)",
+        "Feel free to store the leftover spice powder in an airtight container for up to 3 months, or refrigerate for up to 6 months"
+      ],
+      "servings": "3"
     }
   ]
 }

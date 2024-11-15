@@ -23,10 +23,8 @@ code {
   border: 1px solid #ddd; 
   border-radius: 8px; 
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-  margin: 20px; 
+  margin: 30px; 
   transition: transform 0.2s; 
-  
-
 }
 
 .card img {
@@ -50,7 +48,8 @@ code {
   flex-direction: row;
   flex-wrap: wrap; 
   justify-content: flex-start; 
-  margin: 28px; /* Adjust negative margin for spacing */
+  margin: 35px; 
+  margin-bottom: 80px;
 }
 .list h2{
   background-color: rgb(236, 174, 18);
@@ -58,8 +57,20 @@ code {
   padding-top: 10px;
   padding-bottom: 10px;
   margin-top: 60px;
+}
+.list h3{
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+.search-bar{
+  text-align: center;
+  padding-top: 20px;
   
-
+}
+.list{
+  margin-top: 50px;
 }
 /* Details style */
 .recipedetail button{
@@ -124,8 +135,12 @@ input[type="text"],input[type="number"] {
   width: 100%; 
   min-height:fit-content;
   margin-top: 50px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
 
 }
+
 .footer-content {
   max-width: 1200px; 
   margin: 0 auto; 
@@ -155,6 +170,18 @@ input[type="text"],input[type="number"] {
 .social-icons a:hover {
   color: #ce1818; 
 }
+.edit-recipe button{
+  margin-top: 0.5rem;
+  border: none; 
+  padding: 10px 20px; 
+  border-radius: 5px; 
+  cursor: pointer;  
+}
+.edit-recipe button:hover{
+  background-color: darkgoldenrod;
+}
+
+
 
 
 

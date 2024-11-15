@@ -5,7 +5,8 @@ import RecipeDetails from "./RecipeDetails";
 function Recipelist() {
   const [recipes, setRecipe] = useState([]);
   const [selectedRecipe, setSelectedRecipe] = useState(null);
-  const [searchQuery, setSearchQuery] = useState(""); // State to store the search query
+  const [searchQuery, setSearchQuery] = useState(""); 
+
 
   useEffect(() => {
     fetch("http://localhost:3000/recipes")
@@ -14,8 +15,7 @@ function Recipelist() {
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
 
-
-  // Filter recipes based on the search query
+  // Filter recipes based on Search
   const filteredRecipes = recipes.filter((recipe) =>
     recipe.recipeName.toLowerCase().includes(searchQuery.toLowerCase())
 
@@ -44,28 +44,20 @@ function Recipelist() {
 
   if (selectedRecipe) {
     return (
-      <RecipeDetails
-        recipe={selectedRecipe}
-        onClose={() => setSelectedRecipe(null)}
-        onDelete={deleteRecipe}
-      />
+      <RecipeDetails recipe={selectedRecipe} onClose={() => setSelectedRecipe(null)} onDelete={deleteRecipe} />
     );
   }
 
   return (
     <div className="list">
-     
-      {/* Search input field */}
+
+      <h3>Begin to cook your favorite meal now</h3>
       <div className="search-bar">
-        <input
-          type="text"
-          placeholder="Search by recipe name"
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)} // Update search query state
-        />
-      </div>
-   <h2>Available Recipes</h2>
-      <div className="recipe-list">
+        <input type="text" placeholder="Search by recipe name" value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} />
+        </div>
+        <h2>Available Recipes</h2>
+        <div className="recipe-list">
+
 
         {filteredRecipes.length > 0 ? (
           filteredRecipes.map((recipe) => (
@@ -75,12 +67,9 @@ function Recipelist() {
           <p>No recipes found matching your search.</p>
         )}
       </div>
-    
-
-
     </div>
   );
 }
 
-
 export default Recipelist;
+

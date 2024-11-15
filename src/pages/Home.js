@@ -5,10 +5,7 @@ export default function  Home() {
         <>
         <Landing/>
         <Footer/>
-
         </>
-        
-        
     )
     
 }

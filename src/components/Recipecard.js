@@ -1,6 +1,5 @@
 import React from "react";
 
-
 function RecipeCard ({recipe,onViewDetails}){
     return(
         <div className="card" >
