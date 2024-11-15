@@ -7,13 +7,13 @@ function Recipelist() {
   const [selectedRecipe, setSelectedRecipe] = useState(null);
   const [searchQuery, setSearchQuery] = useState(""); 
 
+
   useEffect(() => {
     fetch("http://localhost:3000/recipes")
       .then((response) => response.json())
       .then((recipe) => setRecipe(recipe))
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
-
 
   // Filter recipes based on Search
   const filteredRecipes = recipes.filter((recipe) =>
@@ -50,12 +50,14 @@ function Recipelist() {
 
   return (
     <div className="list">
+
       <h3>Begin to cook your favorite meal now</h3>
       <div className="search-bar">
         <input type="text" placeholder="Search by recipe name" value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} />
         </div>
         <h2>Available Recipes</h2>
         <div className="recipe-list">
+
 
         {filteredRecipes.length > 0 ? (
           filteredRecipes.map((recipe) => (
@@ -70,3 +72,4 @@ function Recipelist() {
 }
 
 export default Recipelist;
+

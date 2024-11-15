@@ -1,6 +1,5 @@
 import './App.css';
 import React from 'react';
-// import Recipelist from './components/Recipelist';
 import Home from './pages/Home';
 import ContactUs from './pages/Contact us';
 import Form  from './pages/Form';
