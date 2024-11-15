@@ -8,7 +8,7 @@ function RecipeDetails ({recipe, onClose, onDelete, setRecipes}){
         setRecipes(prevRecipes =>
             prevRecipes.map(r => (r.id === updatedRecipe.id ? updatedRecipe : r))
         );
-        setIsEditing(false); // Ensure this is called after updating
+        setIsEditing(false); 
     };
 
     return(
