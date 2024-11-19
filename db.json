@@ -1,48 +1,6 @@
 {
   "recipes": [
     {
-      "id": "1",
-      "recipeName": "Spaghetti Bolognese",
-      "image": "https://plus.unsplash.com/premium_photo-1677000666741-17c3c57139a2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8U3BhZ2hldHRpJTIwQm9sb2duZXNlfGVufDB8fDB8fHww",
-      "prepTime": "15 minutes",
-      "cookTime": "60 minutes",
-      "ingredients": [
-        "1 lb ground beef",
-        "1 onion",
-        "chopped",
-        "2 cloves garlic",
-        "minced",
-        "1 carrot",
-        "grated",
-        "1 stalk celery",
-        "chopped",
-        "1 can (14 oz) crushed tomatoes",
-        "1 can (6 oz) tomato paste",
-        "1 teaspoon dried oregano",
-        "1 teaspoon dried basil",
-        "Salt and pepper to taste",
-        "1/4 cup grated Parmesan cheese",
-        "12 oz spaghetti"
-      ],
-      "instructions": [
-        "In a large pot, cook ground beef over medium heat until browned",
-        "Drain excess fat",
-        "",
-        "Add onion, garlic, carrot, and celery",
-        "Cook until vegetables are tender",
-        "",
-        "Stir in crushed tomatoes, tomato paste, oregano, basil, salt, and pepper",
-        "Simmer for 30 minutes",
-        "",
-        "Meanwhile, cook spaghetti according to package instructions",
-        "Drain",
-        "",
-        "Serve Bolognese sauce over cooked spaghetti and sprinkle with Parmesan cheese",
-        ""
-      ],
-      "servings": 6
-    },
-    {
       "id": "2",
       "recipeName": "Caesar Salad",
       "image": "https://images.unsplash.com/photo-1574926054530-540288c8e678?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -119,47 +77,17 @@
       "servings": 4
     },
     {
-      "id": "5",
-      "recipeName": "Chicken Noodle Soup",
-      "image": "https://images.unsplash.com/photo-1512003867696-6d5ce6835040?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Q2hpY2tlbiUyME5vb2RsZSUyMFNvdXB8ZW58MHx8MHx8fDA%3D",
-      "prepTime": "15 minutes",
-      "cookTime": "40 minutes",
-      "ingredients": [
-        "1 lb boneless, skinless chicken breasts",
-        "8 cups chicken broth",
-        "2 carrots, sliced",
-        "2 celery stalks, sliced",
-        "1 onion, diced",
-        "2 cloves garlic, minced",
-        "2 cups egg noodles",
-        "1 bay leaf",
-        "1 teaspoon dried thyme",
-        "Salt and pepper to taste",
-        "Fresh parsley for garnish"
-      ],
-      "instructions": [
-        "In a large pot, bring chicken broth to a boil. Add chicken breasts, carrots, celery, onion, garlic, bay leaf, thyme, salt, and pepper.",
-        "Reduce heat and simmer for 25-30 minutes until chicken is cooked through and vegetables are tender.",
-        "Remove the chicken from the pot and shred it using two forks. Return the shredded chicken to the pot.",
-        "Add egg noodles to the pot and cook according to package instructions until tender.",
-        "Discard the bay leaf. Adjust the seasoning if needed.",
-        "Serve the chicken noodle soup hot, garnished with fresh parsley."
-      ],
-      "servings": 6
-    },
-    {
-      "id": "d260",
-      "recipeName": "Pilau",
+      "id": "aa1f",
+      "recipeName": "managu",
       "image": "https://cheflolaskitchen.com/wp-content/uploads/2019/12/DSC0362-East-african-pilau-pelau.jpg.webp",
-      "prepTime": "10 minutes",
-      "cookTime": "2000 minutes",
+      "prepTime": "60 minutes",
+      "cookTime": "80 minutes",
       "ingredients": [
         "1 teaspoon cloves",
         "2 tablespoon cumin seeds",
         "1/2 tablespoon black peppercorn seeds",
         "12 pods Cardamon",
-        "1 stick cinnamon",
-        "8 Eggs"
+        "1 stick cinnamon"
       ],
       "instructions": [
         "Place the cumin, black peppers, cinnamon, cardamom and cloves in a dry pan",
@@ -167,7 +95,49 @@
         "You need just 1 to 11/2 tablespoons for this recipe (depending on how fragrant you want the rice to be)",
         "Feel free to store the leftover spice powder in an airtight container for up to 3 months, or refrigerate for up to 6 months"
       ],
-      "servings": "3"
+      "servings": "9"
+    },
+    {
+      "id": "178b",
+      "recipeName": "Pilau",
+      "image": "https://cheflolaskitchen.com/wp-content/uploads/2019/12/DSC0362-East-african-pilau-pelau.jpg.webp",
+      "prepTime": "20 minutes",
+      "cookTime": " minutes",
+      "ingredients": [
+        "1 teaspoon cloves",
+        "2 tablespoon cumin seeds",
+        "1/2 tablespoon black peppercorn seeds",
+        "12 pods Cardamon",
+        "1 stick cinnamon"
+      ],
+      "instructions": [
+        "Place the cumin, black peppers, cinnamon, cardamom and cloves in a dry pan",
+        "Roast over low heat until warmed through and fragrant and blend (I used a coffee grinder) until smooth",
+        "You need just 1 to 11/2 tablespoons for this recipe (depending on how fragrant you want the rice to be)",
+        "Feel free to store the leftover spice powder in an airtight container for up to 3 months, or refrigerate for up to 6 months"
+      ],
+      "servings": ""
+    },
+    {
+      "id": "d882",
+      "recipeName": "Pilau",
+      "image": "https://cheflolaskitchen.com/wp-content/uploads/2019/12/DSC0362-East-african-pilau-pelau.jpg.webp",
+      "prepTime": "12 minutes",
+      "cookTime": "45 minutes",
+      "ingredients": [
+        "1 teaspoon cloves",
+        "2 tablespoon cumin seeds",
+        "1/2 tablespoon black peppercorn seeds",
+        "12 pods Cardamon",
+        "1 stick cinnamon"
+      ],
+      "instructions": [
+        "Place the cumin, black peppers, cinnamon, cardamom and cloves in a dry pan",
+        "Roast over low heat until warmed through and fragrant and blend (I used a coffee grinder) until smooth",
+        "You need just 1 to 11/2 tablespoons for this recipe (depending on how fragrant you want the rice to be)",
+        "Feel free to store the leftover spice powder in an airtight container for up to 3 months, or refrigerate for up to 6 months"
+      ],
+      "servings": "6"
     }
   ]
 }
