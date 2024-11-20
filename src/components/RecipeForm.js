@@ -22,7 +22,7 @@ function AddRecipe() {
             servings
         };
 
-        fetch("http://localhost:3000/recipes", {
+        fetch("https://recipe-app-1-afuv.onrender.com/recipes", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

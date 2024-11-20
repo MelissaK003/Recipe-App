@@ -9,7 +9,7 @@ function Recipelist() {
 
 
   useEffect(() => {
-    fetch("http://localhost:3000/recipes")
+    fetch("https://recipe-app-1-afuv.onrender.com/recipes")
       .then((response) => response.json())
       .then((recipe) => setRecipe(recipe))
       .catch((error) => console.error("Error fetching data:", error));
@@ -32,7 +32,7 @@ function Recipelist() {
 
   // Function to delete recipe
   const deleteRecipe = (id) => {
-    fetch(`http://localhost:3000/recipes/${id}`, {
+    fetch(`https://recipe-app-1-afuv.onrender.com/recipes/${id}`, {
       method: "DELETE",
     })
       .then(() => {
